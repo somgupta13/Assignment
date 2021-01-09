@@ -31,8 +31,9 @@ public class Application {
                 }else if( input==2 ){
                     System.out.println("Average Time in millisecond :" +transactionService.getAverageTime());
                 }else if( input==3 ){
+                    System.out.println("List of All transactions");
                     transactionService.getAllTransactions();
-                    System.out.println("Shutting down...");
+                    System.out.println("Application closed ...");
                     System.exit(0);
                 }else {
                     throw new CustomException("Valid input");
